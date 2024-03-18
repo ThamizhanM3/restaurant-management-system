@@ -1,0 +1,121 @@
+.Expenses{
+    height: 100vh;
+    position: relative;
+    background: linear-gradient(180deg, #f56692 0%, #f5994a 100% );
+    /* opacity: 0.5; */
+    display: flex;
+}
+
+main{
+    padding: 2rem;
+    /* height: 100%; */
+    display: flex;
+    gap: 2rem;
+    /* opacity: 2; */
+}
+
+.content{
+    padding: 2rem 1.5rem;
+    width: 1400px;
+    height: 93vh;
+    background: rgba(252, 246, 249, 0.78);
+    border: 3px solid #fff;
+    backdrop-filter: blur(4.5px);
+    border-radius: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 2rem;
+    list-style: none;
+    align-items: start;
+    overflow: auto;
+    /* padding: 2rem 1.5rem; */
+    /* width: 100%; */
+}
+
+.Form{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.Form input, textarea, select{
+    font-family: inherit;
+    font-size: inherit;
+    outline: none;
+    border: none;
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    border: 2px solid #fff;
+    background: transparent;
+    resize: none;
+    box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.06);
+    color: rgba(34, 34, 96, 0.9);
+}
+
+.Form input, textarea, select::placeholder{
+    color: rgba(34, 34, 96, 0.4);
+}
+
+.Form .input-control input{
+    width: 100%;
+}
+
+.Form .selects{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.Form .selects select{
+    color: rgba(34, 34, 96, 0.4);
+}
+
+.Form .submit-btn button{
+    box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.06);
+}
+
+.Form .selects select:focus, :active{
+    color: rgba(34, 34, 96, 1);
+}
+
+.Form .submit-btn button:hover{
+    background: var(--color-green) !important;
+}
+
+.content .total-income{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FCF6F9;
+    border: 2px solid #FFFFFF;
+    box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.06);
+    border-radius: 20px;
+    padding: 1rem;
+    margin: 1rem 0;
+    font-size: 2rem;
+    gap: .5rem;
+    width: 100%;
+}
+
+.content .total-income span{
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--color-green);
+}
+
+.content .income-content{
+    display: flex;
+    gap: 2rem;
+}
+
+.content .income-content .incomes{
+    flex: 1;
+}
+
+.Form .input-control .react-datepicker-wrapper{
+    width: 100%;
+}
+
+.Form .input-control select{
+    width: 100%;
+}

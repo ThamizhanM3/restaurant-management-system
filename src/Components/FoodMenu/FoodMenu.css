@@ -1,0 +1,201 @@
+.FoodMenu{
+    height: 100vh;
+    position: relative;
+    background: linear-gradient(180deg, #f56692 0%, #f5994a 100% );
+    /* opacity: 0.5; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.FoodMenu .navigation{
+    padding: 2rem 1.5rem;
+    width: 16vw;
+    height: 95vh;
+    background: rgba(252, 246, 249, 0.78);
+    border: 3px solid #fff;
+    backdrop-filter: blur(4.5px);
+    border-radius: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
+    align-items: center;
+    overflow: auto;
+    min-width: 15vw;
+    
+}
+
+.FoodMenu .navigation::-webkit-scrollbar{
+    display: none;
+}
+
+.FoodMenu .content{
+    padding: 2rem 1.5rem;
+    width: 78vw;
+    height: 95vh;
+    background: rgba(252, 246, 249, 0.78);
+    border: 3px solid #fff;
+    backdrop-filter: blur(4.5px);
+    border-radius: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 2rem;
+    list-style: none;
+    align-items: start;
+    overflow: scroll;
+    /*  */
+    /* padding: 2rem 1.5rem; */
+    /* width: 100%; */
+}
+
+.FoodMenu .content::-webkit-scrollbar {
+    display: none;
+}
+
+.FoodMenu .content .customer-details, .starters, .main-course, .drinks, .desserts, .checkout, .billing{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+.billing{
+    display: flex;
+    flex-direction: column;
+    /* overflow: scroll;     */
+    /* height: 90%;  */
+}
+
+.FoodMenu .content h1{
+    align-self: start;
+    margin-left: 30px;
+}
+
+.FoodMenu .content .Form{
+    margin: 50px;
+}
+
+.FoodMenu .content .foods{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.FoodItem{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 380px;
+    background: #fff;
+    align-items: start;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 25px;
+    margin: 30px;
+}
+
+.FoodItem .image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    overflow: hidden;
+    width: 220px; 
+    height: 180px;
+    border-radius: 25px;
+    position: relative;
+    /* top: 5px; */
+}
+
+.FoodMenu .navigation .user-con img {
+    width: 100px;
+    height: 100px;
+}
+
+.FoodMenu .bill{
+    background: #FCF6F9;
+    border: 2px solid #FFFFFF;
+    box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.06);
+    /* padding: 1rem; */
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 90%;
+    overflow: scroll;
+    margin: 15px;
+}
+.FoodMenu .bill-customer{
+    background: #FCF6F9;
+    border: 2px solid #FFFFFF;
+    box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.06);
+    padding: 1rem;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 90%;
+    height: 240px;
+    /* overflow: scroll; */
+    margin: 15px;
+}
+
+.FoodMenu .bill::-webkit-scrollbar{
+    display: none;
+}
+
+.FoodMenu .submit-btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    height: 700px;
+    overflow: scroll;
+    align-items: center;
+}
+
+.FoodMenu .submit-btn::-webkit-scrollbar{
+    display: none;
+}
+
+.FoodMenu .submit-btn .Button{
+    width: 17%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.FoodMenu .foodCart{
+    padding: 2rem 1.5rem;
+    width: 15vw;
+    height: 95vh;
+    background: rgba(252, 246, 249, 0.78);
+    border: 3px solid #fff;
+    backdrop-filter: blur(4.5px);
+    border-radius: 32px;
+    display: none;
+    flex-direction: column;
+    justify-content: start;
+    gap: 2rem;
+    list-style: none;
+    align-items: start;
+    overflow: scroll;
+    align-items: center;
+    
+}
+
+.FoodMenu .foodCart::-webkit-scrollbar {
+    display: none;
+}
+
+.FoodMenu .foodCart h1{
+    align-self: start;
+}

@@ -1,0 +1,42 @@
+.Bill{
+    background: rgba(252, 246, 249, 0.78);
+    border-radius: 50px;
+    justify-content: center;
+    width: 1000px;
+    /* height: 1000px; */
+    padding: 50px;
+    margin: 15px;
+}
+
+.head-above{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Bill .head-above h1{
+    margin: 0;
+    align-self: auto;
+}
+
+.Bill .content-below{
+    display: flex;
+    align-self: start;
+}
+
+.Bill .bill-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.Bill .bill-content .foodItem{
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+}
+
+.Bill .bill-content .foodItem .foodNameTitle, .foodPriceTitle, .foodTotalTitle{
+    margin: 10px 0;
+}
