@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import React, { useState, useEffect } from 'react'
+=======
+import React, { useState } from 'react'
+>>>>>>> bfc121f218cd677cc709bfc71c1ef95d74c2b2a8
 import "./FoodMenu.css"
 import Avatar from '../../Images/Logog04.png'
 import { Link } from 'react-router-dom'
@@ -7,10 +11,17 @@ import { cart, plus, signout } from '../Utils/Icons'
 import Button from '../Button/Button'
 import { billing } from '../Utils/billingDetails'
 import FoodItem from '../FoodItem/FoodItem'
+<<<<<<< HEAD
 import CheckoutItem from '../CheckoutItem/CheckoutItem'
 import Bill from '../Bill/Bill'
 import { history, incomeData } from '../Utils/transactionData'
 // import { maincourseMenu } from '../Utils/foodItems'
+=======
+import { dessertsMenu, drinksMenu, maincourseMenu, startersMenu } from '../Utils/foodItems'
+import CheckoutItem from '../CheckoutItem/CheckoutItem'
+import Bill from '../Bill/Bill'
+import { history, incomeData } from '../Utils/transactionData'
+>>>>>>> bfc121f218cd677cc709bfc71c1ef95d74c2b2a8
 
 let TotalAmount = 0
 export let foodOrdered = []
@@ -25,6 +36,10 @@ function findTotal(){
     for(i of foodOrdered){
         payable += i.price
     }
+<<<<<<< HEAD
+=======
+    console.log(payable, "payable")
+>>>>>>> bfc121f218cd677cc709bfc71c1ef95d74c2b2a8
     paying = payable*2
     return payable
 }
@@ -166,11 +181,14 @@ const FoodMenu = () => {
         console.log("history" + history)
     }
 
+<<<<<<< HEAD
     function handleBills(){
         console.log(foodOrdered, "Billed")
         handleDelete()
     }
 
+=======
+>>>>>>> bfc121f218cd677cc709bfc71c1ef95d74c2b2a8
     function handleDelete(){
         foodOrdered = []
         customerDetails = {customerName: '', mobile: '', membership: '', description: ''}
@@ -182,6 +200,7 @@ const FoodMenu = () => {
         })
         handleSubmit()
     }
+<<<<<<< HEAD
 
     const [starters, setStarters] = useState([]);
 
@@ -264,6 +283,8 @@ const FoodMenu = () => {
             console.error('Error fetching data:', error);
         }
     };
+=======
+>>>>>>> bfc121f218cd677cc709bfc71c1ef95d74c2b2a8
     
     return (
         <div className='FoodMenu'>
@@ -328,7 +349,11 @@ const FoodMenu = () => {
                 <div className="starters" id='starters' style={{display: 'none'}}>
                     <h1>Starters</h1>
                     <div className="foods">
+<<<<<<< HEAD
                         {starters.map((food) => {
+=======
+                        {startersMenu.map((food) => {
+>>>>>>> bfc121f218cd677cc709bfc71c1ef95d74c2b2a8
                             return <FoodItem 
                                 name = {food.name}
                                 price={food.price}
@@ -341,7 +366,11 @@ const FoodMenu = () => {
                 <div className="main-course" id='main-course' style={{display: 'none'}}>
                     <h1>Burgers</h1>
                     <div className="foods">
+<<<<<<< HEAD
                         {maincourse.map((food) => {
+=======
+                        {maincourseMenu.map((food) => {
+>>>>>>> bfc121f218cd677cc709bfc71c1ef95d74c2b2a8
                             return <FoodItem 
                                 name = {food.name}
                                 price={food.price}
@@ -354,7 +383,11 @@ const FoodMenu = () => {
                 <div className="drinks" id='drinks' style={{display: 'none'}}>
                     <h1>Drinks</h1>
                     <div className="foods">
+<<<<<<< HEAD
                         {drinks.map((food) => {
+=======
+                        {drinksMenu.map((food) => {
+>>>>>>> bfc121f218cd677cc709bfc71c1ef95d74c2b2a8
                             return <FoodItem 
                                 name = {food.name}
                                 price={food.price}
@@ -367,7 +400,11 @@ const FoodMenu = () => {
                 <div className="desserts" id='desserts' style={{display: 'none'}}>
                     <h1>Desserts</h1>
                     <div className="foods">
+<<<<<<< HEAD
                         {desserts.map((food) => {
+=======
+                        {dessertsMenu.map((food) => {
+>>>>>>> bfc121f218cd677cc709bfc71c1ef95d74c2b2a8
                             return <FoodItem 
                                 name = {food.name}
                                 price={food.price}
@@ -434,7 +471,11 @@ const FoodMenu = () => {
                             bRad={'30px'}
                             bg={'var(--color-accent'}
                             color={'#fff'}
+<<<<<<< HEAD
                             onClick={handleBills} 
+=======
+                            onClick={handleDelete} 
+>>>>>>> bfc121f218cd677cc709bfc71c1ef95d74c2b2a8
                         />
                 </div>
             </div>
