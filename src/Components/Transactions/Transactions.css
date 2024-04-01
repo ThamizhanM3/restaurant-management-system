@@ -1,0 +1,52 @@
+.Transactions{
+    height: 100vh;
+    position: relative;
+    background: linear-gradient(180deg, #f56692 0%, #f5994a 100% );
+    /* opacity: 0.5; */
+}
+
+main{
+    padding: 2rem;
+    /* height: 100%; */
+    display: flex;
+    gap: 2rem;
+    /* opacity: 2; */
+}
+
+.Transactions main .content{
+    padding: 2rem 1.5rem;
+    width: 1400px;
+    height: 93vh;
+    background: rgba(252, 246, 249, 0.78);
+    border: 3px solid #fff;
+    backdrop-filter: blur(4.5px);
+    border-radius: 32px;
+    display: flex;
+    /* flex-direction: column; */
+    /* justify-content: space-between; */
+    gap: 2rem;
+    list-style: none;
+}
+
+.Transactions .history-item{
+    background: #FCF6F9;
+    border: 2px solid #FFFFFF;
+    box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.06);
+    padding: 1rem;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.Transactions main .content .context{
+    display: flex;
+    width: 100% ;
+    justify-content: space-between;
+}
+
+.Transactions main .content .context .incomes .history-item, .expenses .history-item{
+    margin: 30px 0;
+    width: 30vw;
+}
