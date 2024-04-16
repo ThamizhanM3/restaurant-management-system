@@ -3,20 +3,73 @@ import './LoginForm.css'
 import { FaUser, FaLock } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 
+var userData = []
+
+fetch('http://localhost:3001/getUsers')
+.then((res) => {
+    return res.json()
+})
+.then((data) => {
+    userData = [...data]
+})
+
 function handleLogin(){
-    let user = document.getElementById("userName")
-    let pass = document.getElementById("pass")
-    console.log(user + " " + pass + " print")
-    if(user.value == "admin" && pass.value == "admin"){
-        window.location.href = "dashboard"
+    let userName = document.getElementById("userName")
+    let password = document.getElementById("pass")
+    // console.log(user + " " + pass + " print")
+    // if(userName.value == "admin" && password.value == "admin"){
+    //     window.location.href = "dashboard"
+    // }
+    // else if(userName.value == "employee" && password.value == "employee"){
+    //     window.location.href = "foodmenu"
+    // }
+    // else{
+    //     alert("Not Registered")
+    //     userName.value = ""
+    //     password.value = ""
+    // }
+
+    function loginUser(uname, pass) {
+        return new Promise((resolve, reject) => {
+            setTimeout(() => {
+                const user = userData.find(
+                    (user) => user.uname === uname && user.pass === pass
+                );
+                if (user) {
+                    resolve(user);
+    
+                } else {
+                    reject(new Error("Invalid email or password"));
+                }
+            }, 1000);
+        });
     }
-    else if(user.value == "employee" && pass.value == "employee"){
-        window.location.href = "foodmenu"
-    }
-    else{
-        alert("Not Registered")
-        user.value = ""
-        pass.value = ""
+
+    var uname = userName.value
+    var pass = password.value
+    OnLogin()
+
+    async function OnLogin() {
+        try{
+            const user = await loginUser (uname, pass);
+            if (user){
+                if (user.uname === 'admin'){
+                    window.location.href="dashboard"
+                    window.redirect(`dashboard?username=${uname}`);
+                }
+                else if (user.uname === 'employee'){
+                    window.location.href="foodMenu"
+                }
+            }
+            else {
+                alert ('Invalid Login')
+            }
+        }
+        catch{
+            // alert('Invalid Login')
+            // console.log(user)
+            // window.location.href="../../index.html"
+        }
     }
 }
 

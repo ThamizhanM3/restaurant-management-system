@@ -13,7 +13,7 @@ import Expenses from './Components/Expenses/Expenses';
 import FoodMenu from './Components/FoodMenu/FoodMenu';
 import Cart from './Components/Cart/Cart';
 
-function App() {
+function App() { 
   return (
     <div className="App">
       <Routes>

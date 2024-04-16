@@ -6,14 +6,10 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
-<<<<<<< HEAD
     "cors": "^2.8.5",
     "express": "^4.19.2",
     "moment": "^2.30.1",
     "mongoose": "^8.2.4",
-=======
-    "moment": "^2.30.1",
->>>>>>> bfc121f218cd677cc709bfc71c1ef95d74c2b2a8
     "react": "^18.2.0",
     "react-datepicker": "^6.4.0",
     "react-dom": "^18.2.0",
@@ -45,14 +41,13 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-<<<<<<< HEAD
   },
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "index.js",
   "keywords": [],
   "author": "",
-  "license": "ISC"
-=======
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.0"
   }
->>>>>>> bfc121f218cd677cc709bfc71c1ef95d74c2b2a8
 }

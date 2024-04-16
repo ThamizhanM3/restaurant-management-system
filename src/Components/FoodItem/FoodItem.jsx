@@ -10,11 +10,17 @@ const FoodItem = ({name, price, count, img, onClick}) => {
                 <img src={img} alt="" />
             </div>
             <div className="description">
-                Name : {name} <br />
-                Price : {price} <br />
+                <p>
+                    Name : {name}
+                </p>
+                <p>
+                    Price : {price}
+                </p>
                 {/* count : {count} <br /> */}
                 {/* <button onClick={() => {count += 1; console.log(count)}}>inc {count} </button> */}
                 {/* <input type="button" name={name} id={name} onClick={onClick} value='Add Item'/> */}
+            </div>
+            <div className="addButton">
                 <Button 
                     name={'Add Item'}
                     icon={plus}
