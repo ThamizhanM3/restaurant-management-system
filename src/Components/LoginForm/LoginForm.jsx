@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 var userData = []
 
-fetch('http://localhost:3001/getUsers')
+fetch('https://restaurant-management-server-dd8b.onrender.com/getUsers')
 .then((res) => {
     return res.json()
 })

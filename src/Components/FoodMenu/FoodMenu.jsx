@@ -191,7 +191,7 @@ const FoodMenu = () => {
 
     const fetchStarters = async () => {
         try {
-            const response = await fetch('http://localhost:3001/getStarters');
+            const response = await fetch('https://restaurant-management-server-dd8b.onrender.com/getStarters');
             if (!response.ok) {
                 throw new Error('Network response was not ok');
             }
@@ -211,7 +211,7 @@ const FoodMenu = () => {
 
     const fetchMaincourse = async () => {
         try {
-            const response = await fetch('http://localhost:3001/getMaincourse');
+            const response = await fetch('https://restaurant-management-server-dd8b.onrender.com/getMaincourse');
             if (!response.ok) {
                 throw new Error('Network response was not ok');
             }
@@ -232,7 +232,7 @@ const FoodMenu = () => {
 
     const fetchDrinks = async () => {
         try {
-            const response = await fetch('http://localhost:3001/getDrinks');
+            const response = await fetch('https://restaurant-management-server-dd8b.onrender.com/getDrinks');
             if (!response.ok) {
                 throw new Error('Network response was not ok');
             }
@@ -254,7 +254,7 @@ const FoodMenu = () => {
 
     const fetchDesserts = async () => {
         try {
-            const response = await fetch('http://localhost:3001/getDesserts');
+            const response = await fetch('https://restaurant-management-server-dd8b.onrender.com/getDesserts');
             if (!response.ok) {
                 throw new Error('Network response was not ok');
             }
