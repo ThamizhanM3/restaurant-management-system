@@ -27,7 +27,7 @@ const Desserts = mongoose.model('desserts', foodItemSchema);
 const Users = mongoose.model('users', userSchema);
 
 // Connect to the MongoDB database
-mongoose.connect('mongodb://localhost:27017/restaurant', { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect('mongodb+srv://Mithelesh:MitheleshM3@mithelesh01.yapjwgo.mongodb.net/restaurant?retryWrites=true&w=majority&appName=Mithelesh01')
     .then(() => {
         console.log('Connected to MongoDB');
     })
